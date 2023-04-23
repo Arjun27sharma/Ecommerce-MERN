@@ -5,6 +5,7 @@ import Footer from './components/Layout/Footer/Footer.js';
 import Home from  './components/Home/Home.js';
 import { Route, BrowserRouter, Routes } from 'react-router-dom';
 import WebFont from "webfontloader"
+import LoginSignup from './User/LoginSignup';
 
 
 
@@ -25,6 +26,7 @@ function App() {
       <Routes>
       {/* <Header /> */}
       <Route exact path='/' Component={Home}/>
+      <Route exact path='/login' Component={LoginSignup}/>
 
       {/* <Footer /> */}
       </Routes>
